@@ -1,0 +1,9 @@
+CREATE TABLE
+>create table doctor(did int primary key, lname varchar(255), fname varchar(255), address varchar(255), age int, specialization varchar(255), ph_no bigint, institute_id mediumint);
+>create table patient(pid int primary key, name varchar(255), age int, ph_no bigint, address varhcra(255));
+>create table institute(idi int primary key, name varchra(255), address varhcra(255));
+>create table doctor_log(did int primary key, use_name varchar(255) unique, password varchar(255));
+create table med_data(pid int primary key, age int, bp decimal(8,8), sg decimal(8,8), al decimal(8,8), su decimal(8,8), rbc int, pc int, pcc int, ba int, bgr decimal(8,8), bu decimal(8,8), sc decimal(8,8), sod decimal(8,8), pot decimal(8,8), hemo decimal(8,8), pcv decimal(8,8), wc decimal(8,8), rc decimal(8,8), htn int, dm int, cad int, appet int, pe int);
+
+INSERT VALUES
+>insert into doctor values(1, "Stonr", "Silas", "Detroit", 52, "Prosthesis", 2442833174, 1);
